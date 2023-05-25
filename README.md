@@ -1,6 +1,6 @@
 # store-api
 
-##Below are the apis you can use for fetching the required data:
+## Below are the apis you can use for fetching the required data:
 
 #### 1. Fetching All Products : [GET] https://store-api-o6m1.onrender.com/v1/products
 #### 2. Fetching single Product based on product id : [GET] https://store-api-o6m1.onrender.com/v1/products/<int:id>
