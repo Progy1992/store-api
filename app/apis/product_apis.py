@@ -16,7 +16,7 @@ def get_all_products():
 
 
 @app.route('/v1/products/<int:id>')
-def get_prodyct_by_id(id):
+def get_product_by_id(id):
     try:
         return jsonify({
             'data': products.get_product_by_id(id)
