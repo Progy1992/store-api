@@ -38,3 +38,14 @@ def get_user_by_id(id):
         return jsonify({
             'message': f'Not able to fetch the data {str(e)}'
         }), 400
+    
+@app.route('/v1/users')
+def get_all_users():
+    try:
+        return jsonify({
+            'data': user.get_all_users()
+        }), 200
+    except Exception as e:
+        return jsonify({
+            'data': ''
+        }), 400

@@ -34,3 +34,9 @@ class User:
 
         except Exception as e:
             raise Exception('User details not fetched')
+        
+    def get_all_users(self):
+        try:
+            return self.users
+        except Exception as e:
+            raise Exception('Users not fetched')
