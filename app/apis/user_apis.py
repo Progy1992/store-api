@@ -3,7 +3,7 @@ from app import app, jsonify, User, request
 user = User()
 
 
-@app.route('/v1/login', methods=['POSt'])
+@app.route('/v1/login', methods=['POST'])
 def login():
     try:
         request_data = request.json
@@ -24,7 +24,7 @@ def login():
         })
     except Exception as e:
         return jsonify({
-            'message': f'Login failed wit error {str(e)}'
+            'message': f'Login failed with error {str(e)}'
         }), 400
 
 

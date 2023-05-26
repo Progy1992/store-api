@@ -11,7 +11,7 @@ def get_all_products():
         }), 200
     except Exception as e:
         return jsonify({
-            'data': ''
+            'message': 'Not able to fetch all products data.'
         }), 400
 
 
@@ -23,5 +23,5 @@ def get_product_by_id(id):
         }), 200
     except Exception as e:
         return jsonify({
-            'data': ''
+            'message': 'Not able to fetch product data with specified id.'
         }), 400
