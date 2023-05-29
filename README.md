@@ -9,4 +9,4 @@
 #### 5. login API : [POST] https://store-api-o6m1.onrender.com/v1/login. - Request Body - {username, password}
 
 ## Running the app using the below command
-        `gunicorn -w 4 -b 0.0.0.0 'main:app'`
+        gunicorn -w 4 -b 0.0.0.0 'main:app'
