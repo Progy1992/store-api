@@ -8,5 +8,5 @@
 #### 4. Fetching single user data based on user id: [GET] https://store-api-o6m1.onrender.com/v1/users/<int:id>
 #### 5. login API : [POST] https://store-api-o6m1.onrender.com/v1/login. - Request Body - {username, password}
 
-### Running the app using the below command
-`gunicorn -w 4 -b 0.0.0.0 'main:app'`
+## Running the app using the below command
+        `gunicorn -w 4 -b 0.0.0.0 'main:app'`
